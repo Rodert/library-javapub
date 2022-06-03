@@ -1,0 +1,138 @@
+#aside,#space-list{
+	overflow: auto;
+	
+}
+#space-list{
+	overflow-x: hidden;
+}
+::-webkit-scrollbar-track {background:rgba(0,0,0,.1)}
+::-webkit-scrollbar-thumb {background:rgba(255,255,255,.3)}
+::-webkit-scrollbar-track {background:rgba(255,255,255,.1)}
+::-webkit-scrollbar-thumb {background:rgba(255,255,255,.3)}
+
+.apply-tip{
+	color: #ff5f00;
+	font-weight: bold;
+}
+/* 暗锚 */
+/* .target-fix {
+    position: relative;
+    top: -70px;
+    display: block;
+    height: 0;
+    overflow: hidden;
+} */
+/* a:target{
+    padding-top:100px;
+} */
+
+.building-div{
+	
+}
+.building-div>span{
+	display: block;
+	/* width: 90%; */ 
+	padding:4px 10px ;
+	background: #CC3399;
+	color: #fff;
+	margin: 0px;
+	margin-top: 10px;
+	font-size: 18px;
+}
+.building-div>p{
+	background: #3399CC;
+	color:#fff;
+	padding:4px 10px ;
+	margin-bottom: 10px;
+}
+
+
+/*场地申请的主页*/
+
+/*左边树形菜单*/
+.aside-menu{
+	
+}
+
+.tree {
+	color: #46CFB0;
+	/*	width: 800px;*/
+	/*margin: 100px auto;*/
+}
+
+.tree li,
+.tree li> a,
+.tree li> span {
+	padding: 4pt;
+	border-radius: 4px;
+}
+
+.tree li a {
+	color: #46CFB0;
+	text-decoration: none;
+	line-height: 20pt;
+	border-radius: 4px;
+}
+
+.tree li a:hover {
+	background-color: #34BC9D;
+	color: #fff;
+}
+
+.active {
+	background-color: #34495E;
+	color: white;
+}
+
+.active a {
+	color: #fff;
+}
+
+.tree li a.active:hover {
+	background-color: #34BC9D;
+}
+
+.treemenu li {
+	list-style: none;
+}
+
+.treemenu .toggler {
+	cursor: pointer;
+}
+
+.treemenu .toggler:before {
+	display: inline-block;
+	margin-right: 2pt;
+}
+
+li.tree-empty> .toggler {
+	color: #aaa;
+}
+
+li.tree-empty> .toggler:before {
+	content: "\2212";
+}
+
+li.tree-closed> .toggler:before {
+	content: "+";
+}
+
+li.tree-opened> .toggler:before {
+	content: "\2212";
+}
+
+ul{
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+#space-list{
+	padding-top: 15px;
+	
+}
+
+#space-list .col-sm-4 a{
+	text-decoration: none;
+	/* color: green; */
+}

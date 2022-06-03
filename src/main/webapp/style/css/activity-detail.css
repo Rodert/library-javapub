@@ -1,0 +1,159 @@
+/* 活动预告弹幕css */
+html,body{
+	height: 100%;
+}
+#fore-pane{
+	min-	height: 400px;
+	background: #33cccc;
+	margin-bottom: 30px;
+}
+#barrage-form input{
+	font-size: 18px;
+	line-height: 30px;
+	width: 80%;
+	margin: 10px;
+	padding: 3px;
+}
+
+
+/* 预告活动和往期活动通用css */
+.breadcrumb{
+	background: none;
+	
+}
+.breadcrumb a{
+	text-decoration: none;
+	color: #0099CC;
+}
+.act-intro{
+	min-height: 100px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #aaa;
+}
+.act-table{
+	font-size: 16px;
+	line-height: 30px;
+}
+.act-table>label{
+	color: orange;
+	margin-right: 20px;
+	font-weight: bald;
+}
+/* 评论框 */
+.commTextPane{
+	display: block;
+	width: 100%;
+    height: auto;
+    min-height: 8em;
+    max-height: 15em;
+    overflow: auto;
+    padding: 6px 12px;
+    margin-bottom: 5px;
+    line-height: 1.42857143;
+    font-size: 16px;
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #99CCFF;
+    cursor: text;
+    border-radius: 3px;
+
+}
+#submit_btn,#reset_btn{
+	margin-right: 5px;
+}
+/*所有评论*/
+ul{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	
+}
+ul.comm-list>li{
+	
+}
+
+
+.comms h4{
+	color: #AAAAAA;
+}
+.comm-list ul li{
+	
+}
+
+.comm-body{
+
+}
+.comm-content{
+	min-height: 100px;
+	padding: 15px;
+	color: #777;
+}
+.comm-footer {
+	color: #AAAAAA;
+	text-align: right;
+}
+.comm-footer a{
+	text-decoration: none;
+}
+
+.replys{
+	background: rgb(243,243,243);
+}
+.replys ul li{
+	padding: 10px;
+	padding-bottom: 4px;
+}
+.replys img{
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+}
+.replys a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.replys ul li>p{
+	text-align: right;
+	font-size: 12px;
+	color: #777777;
+}
+
+.replyTextarea{
+	display: block;
+	width: 100%;
+    height: auto;
+    min-height: 4em;
+    overflow: auto;
+    padding: 6px 12px;
+    margin-bottom: 5px;
+    line-height: 1.42857143;
+    font-size: 16px;
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #6666FF;
+    cursor: text;
+    border-radius: 3px;
+}
+
+/* 活动列表 */
+.act-list{
+	color: #9933CC;
+	font-size: 16px;
+}
+.act-list label{
+	color: #99CC33;
+	
+}
+.act-list a{
+	text-decoration: none;
+	color: #FF9900;
+}
+.act-list a:hover{
+	color: #99CC33;
+}

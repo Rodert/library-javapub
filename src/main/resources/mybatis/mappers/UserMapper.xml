@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.library.dao.UserDao">
+    <select id="findUserByStuidAndPassword" resultType="com.example.library.model.User">
+        select * from user where stuid=#{stuid} and password=#{password}
+    </select>
+    <select id="findAllStu" resultType="com.example.library.model.User">
+        select * from user
+    </select>
+    <insert id="addUser">
+        insert into user(username,sex,tel,institute,profession,classname,stuid,password) values (#{username},#{sex},#{tel},#{institute},#{profession},#{classname},#{stuid},#{password})
+    </insert>
+</mapper>

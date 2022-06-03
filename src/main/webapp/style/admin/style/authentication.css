@@ -1,0 +1,41 @@
+table {
+	text-align: center;
+}
+table.table thead th {
+	text-align: center;
+}
+table.table tbody td {
+	line-height: 128.5px;
+}
+
+div.gallery {
+  position: relative;
+}
+
+div.gallery > img {
+	display: block;
+	margin: auto;
+  width: 250px;
+  transition: .1s transform;
+  transform: translateZ(0);
+  /* hack */
+}
+
+div.gallery:hover {
+  z-index: 1;
+}
+
+div.gallery img:hover {
+  transform: scale(3, 3);
+  transition: .3s transform;
+}
+
+div.gallery:before, div.gallery:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+div.gallery:after {
+  clear: both;
+}

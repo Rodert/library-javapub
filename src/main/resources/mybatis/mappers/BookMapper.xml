@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.library.dao.BookDao">
+    <select id="findAllBooks" resultType="com.example.library.model.Book">
+        select * from book
+    </select>
+    <!--    删除书籍-->
+    <delete id="deleteBookById">
+        delete from book where bid=#{bid}
+    </delete>
+    <!--    添加书籍-->
+    <insert id="addBook">
+        insert into book(bookname,author,type,publisher,publicationdate,price,state,comment) values(#{bookname},#{author},#{type},#{publisher},#{publicationdate},#{price},#{state},#{comment})
+    </insert>
+    <!--    借阅书籍-->
+    <update id="updateBookByBid">
+        update book set state='2' where bid=#{bid}
+    </update>
+    <!--    归还书籍-->
+    <update id="upBookByBid">
+        update book set state='1' where bid=#{bid}
+    </update>
+</mapper>

@@ -1,0 +1,85 @@
+a.more {
+	text-decoration: none;
+	color: #888;
+}
+
+a.more:hover {
+	color: #666;
+}
+.view-all-act{
+	text-decoration: none;
+	color: #aaa;
+}
+.view-all-act:hover{
+	color: #43CD80;
+}
+.activity > h2{
+	overflow: hidden;
+	word-break: keep-all;   /* 不换行 */
+	white-space: nowrap;    /* 不换行 */
+	text-overflow: ellipsis;/* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+.activity>p{
+	height: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.act-title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.tree-icon {
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+    background: rgb(64, 210, 177);
+    border-radius: 50%;
+}
+.act-intro{
+	max-height: 120px;
+	min-height: 100px;
+	line-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/* white-space:nowrap; */
+}
+
+.view-more {
+	border-width: 1px;
+    border-style: solid;
+    border-color: rgb(64, 210, 177);
+    border-image: initial;
+    border-radius: 0px;
+    padding: 8px 40px;
+    transition: all 0.3s;
+    color: rgb(64, 210, 177);
+}
+.view-more:hover {
+	color: rgb(255, 255, 255);
+    background: rgb(64, 210, 177);
+}
+
+.load-more-notice {
+	padding: 0 15px;
+    width: 120px;
+    height: 30px;
+    background-color: #D31733;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 20px auto;
+    border: 0 none;
+    font-size: 16px;
+}
+.load-more-notice>a{
+	color: #eee;
+	text-decoration: none;
+}
+.load-more-notice>a:hover{
+	cursor: pointer;
+}
